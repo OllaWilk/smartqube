@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/smartqube/static/css/main.4b6f2161.css",
-    "main.js": "/smartqube/static/js/main.9738c5d5.js",
+    "main.js": "/smartqube/static/js/main.a0fe5edc.js",
     "static/media/logo.png": "/smartqube/static/media/logo.ba807a5c219754934be4.png",
     "index.html": "/smartqube/index.html",
     "main.4b6f2161.css.map": "/smartqube/static/css/main.4b6f2161.css.map",
-    "main.9738c5d5.js.map": "/smartqube/static/js/main.9738c5d5.js.map"
+    "main.a0fe5edc.js.map": "/smartqube/static/js/main.a0fe5edc.js.map"
   },
   "entrypoints": [
     "static/css/main.4b6f2161.css",
-    "static/js/main.9738c5d5.js"
+    "static/js/main.a0fe5edc.js"
   ]
 }
