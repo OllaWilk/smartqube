@@ -8,6 +8,11 @@ function App() {
         <img src={logo} className='App-logo' alt='logo' />
         <p>Electronical Enclosures and Climate Control</p>
         <span>Page under construction.</span>
+
+        <p>
+          Contact Us at <br />
+          for sales: grzegorz.gorny@smartqube.pl
+        </p>
       </header>
     </div>
   );
