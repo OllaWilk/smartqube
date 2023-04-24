@@ -1,16 +1,14 @@
-import logo from './logo.png';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Contact, Home, Main, NotFound } from './Pages/index';
 
-function App() {
+export const App = () => {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>Electronical Enclosures and Climate Control</p>
-        <span>Page under construction.</span>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Main />} />
+      <Route path='/home' element={<Home />} />
+      <Route path='/contact' element={<Contact />} />
+      <Route path='*' element={<NotFound />} />
+    </Routes>
   );
-}
-
-export default App;
+};

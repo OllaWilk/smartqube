@@ -1,0 +1,36 @@
+@mixin flex($flex-direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+// Mobile devices
+@mixin sm {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+// Tablet devices
+@mixin md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// Desctop devices
+
+@mixin lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+// Large-desctop devices
+
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
