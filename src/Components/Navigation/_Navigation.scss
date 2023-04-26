@@ -1,0 +1,100 @@
+@import '../../styles/variable';
+@import '../../styles/mixins';
+
+.navigation {
+  background-color: var(--color-dark);
+  @include flex(row, center, space-around);
+  color: var(--color-light);
+  height: 120px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  @include sm {
+    height: 100px;
+  }
+
+  &__list {
+    @include flex(row, center, flex-end);
+    text-transform: uppercase;
+    height: 100px;
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  &__sidebar {
+    display: none;
+    cursor: pointer;
+
+    @include lg {
+      display: block;
+    }
+  }
+
+  &__sidebar-icon {
+    width: 16px;
+    height: 16px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 100%;
+    background-color: var(--color-dark);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+    z-index: -20;
+    ul {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    @include sm {
+      top: 100px;
+    }
+  }
+  .active {
+    transform: translateX(0);
+    z-index: -999;
+  }
+
+  .link,
+  .sidebar-link {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    transition: var(--transition);
+    font-weight: var(--semi-bold);
+    font-family: var(--header-font);
+    letter-spacing: 1px;
+  }
+  .link {
+    height: 93px;
+    width: 100px;
+
+    @include flex(row, flex-end, center);
+    &:hover {
+      background-color: var(--color-main);
+      padding: 2rem;
+    }
+  }
+
+  .sidebar-link {
+    @include flex(column, center, center);
+    height: 50px;
+    width: 100px;
+
+    &:hover {
+      color: var(--color-main);
+    }
+  }
+}

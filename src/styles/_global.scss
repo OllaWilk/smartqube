@@ -1,3 +1,6 @@
+@import './_variable';
+@import './_mixins';
+
 *,
 *::after,
 *::before {
@@ -5,4 +8,39 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-light);
+  font-family: var(--text-font);
+  font-size: var(--font-d-text);
+  color: var(--color-dark);
+  text-align: center;
+  line-height: 1.7;
+}
+
+.pages {
+  min-height: 94vh;
+  padding: 120px 0 0 0;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: unset;
+    text-decoration: none;
+  }
 }

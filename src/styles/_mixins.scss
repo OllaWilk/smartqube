@@ -14,7 +14,7 @@
 
 // Tablet devices
 @mixin md {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
@@ -22,7 +22,7 @@
 // Desctop devices
 
 @mixin lg {
-  @media screen and (min-width: 992px) {
+  @media screen and (max-width: 992px) {
     @content;
   }
 }
