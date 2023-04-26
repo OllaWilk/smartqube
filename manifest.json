@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "SmartQube - Electronical Enclosures and Climate Control",
+  "short_name": "SmartQube",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
