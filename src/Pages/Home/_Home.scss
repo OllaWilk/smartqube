@@ -1,0 +1,41 @@
+@import '../../styles/mixins';
+
+.home-page {
+  &__splash,
+  &__products-and-services,
+  &__solutions,
+  &__contact {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__splash {
+    background-image: url('../../images/banner-bg.png');
+    background-attachment: fixed;
+    height: 65vh;
+  }
+
+  &__solutions {
+    background-color: var(--color-light);
+    padding: 0rem 0;
+  }
+
+  &__products-and-services {
+    background-image: url('../../images/bg-layer-qube-min.png');
+    margin: 2rem 0;
+    height: 65vh;
+  }
+  &__contact {
+    background-color: var(--color-green-dark);
+
+    .contact-section {
+      @include flex(row, center, space-between);
+      padding: 50px;
+
+      @include md {
+        @include flex(column-reverse, center, space-around);
+      }
+    }
+  }
+}

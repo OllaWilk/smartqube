@@ -1,0 +1,53 @@
+@import '../../styles/mixins';
+
+.subscrybe {
+  @include sm {
+    width: auto;
+    padding: 2rem 10%;
+    min-height: 25vh;
+  }
+
+  &__title,
+  button,
+  input {
+    color: var(--color-light);
+    font-family: var(--header-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: var(--font-d-subtitle);
+  }
+
+  &__form {
+    @include flex(column, center, space-between);
+    padding: 1rem 0;
+
+    input,
+    button {
+      width: 100%;
+      border: none;
+      border-radius: var(--radius);
+      padding: 12px 24px;
+      margin-top: 1rem;
+    }
+
+    input {
+      text-transform: none;
+      color: var(--color-dark);
+    }
+
+    button {
+      background-color: var(--color-dark);
+      color: var(--color-light);
+      cursor: pointer;
+      transition: var(--transition);
+
+      &:hover {
+        background-color: var(--color-main);
+        color: var(--color-dark);
+      }
+    }
+  }
+}

@@ -20,16 +20,23 @@ body {
 }
 
 .pages {
-  min-height: 94vh;
   padding: 120px 0 0 0;
+
+  @include sm {
+    min-height: 94vh;
+    padding: 100px 0 0 0;
+  }
 }
 
 .container {
   width: 90vw;
   max-width: 1200px;
-  min-height: 100vh;
   margin: 0 auto;
-  background-color: pink;
+  // background-color: pink;
+
+  @include sm {
+    width: 95vw;
+  }
 }
 
 li {

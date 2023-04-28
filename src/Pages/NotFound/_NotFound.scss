@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+
+.notfound-page {
+  @include flex(column, center, center);
+  height: 80vh;
+
+  a {
+    width: 200px;
+  }
+
+  .error-wrap {
+    padding: 2rem;
+  }
+  .res-info {
+    font-size: var(--font-d-header);
+  }
+}
