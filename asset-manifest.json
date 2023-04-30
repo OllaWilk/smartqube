@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/smartqube/static/css/main.b463b234.css",
-    "main.js": "/smartqube/static/js/main.21f2947e.js",
+    "main.css": "/smartqube/static/css/main.225e6138.css",
+    "main.js": "/smartqube/static/js/main.572a451c.js",
     "static/media/EV_Series.png": "/smartqube/static/media/EV_Series.71445b5a2197c9d11cc1.png",
     "static/media/Enclosure-Modularity-Website.png": "/smartqube/static/media/Enclosure-Modularity-Website.66686af3dae989f6a58e.png",
     "static/media/banner-bg.png": "/smartqube/static/media/banner-bg.cd5d715dcd45c9813288.png",
     "static/media/bg-layer-qube-min.png": "/smartqube/static/media/bg-layer-qube-min.1ed89b34251c6e1ee2ed.png",
     "static/media/logo.png": "/smartqube/static/media/logo.7d0b669fda9ce1fc2868.png",
     "index.html": "/smartqube/index.html",
-    "main.b463b234.css.map": "/smartqube/static/css/main.b463b234.css.map",
-    "main.21f2947e.js.map": "/smartqube/static/js/main.21f2947e.js.map"
+    "main.225e6138.css.map": "/smartqube/static/css/main.225e6138.css.map",
+    "main.572a451c.js.map": "/smartqube/static/js/main.572a451c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b463b234.css",
-    "static/js/main.21f2947e.js"
+    "static/css/main.225e6138.css",
+    "static/js/main.572a451c.js"
   ]
 }
