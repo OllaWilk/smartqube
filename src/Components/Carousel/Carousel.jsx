@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import next from '../../images/slick-next.png';
 import prev from '../../images/slick-prev.png';
-import ev_series from '../../images/EV_Series.png';
+import { images } from '../../images/index.js';
+// import ev_series from '../../images/EV_Series.png';
 import enclosure_modul from '../../images/Enclosure-Modularity-Website.png';
 import './_Carousel.scss';
+
+const { ev_series } = images;
 
 const sliders = [
   {
