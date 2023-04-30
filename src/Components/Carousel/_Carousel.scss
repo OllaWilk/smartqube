@@ -1,12 +1,24 @@
 @import '../../styles/mixins';
 
 .carousel {
-  @include flex(column, centr, space-between);
+  position: relative;
   height: 65vh;
 
-  &__slides-and-navigation {
+  &__slides {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+  }
+
+  &__navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
     @include flex(row, center, space-between);
-    height: 90%;
 
     .prev,
     .next {
@@ -19,89 +31,92 @@
         display: none;
       }
     }
-
-    .slide {
-      display: none;
-
-      &.active {
-        @include flex(row, center, center);
-        user-select: none;
-        width: 100%;
-        height: 100%;
-        padding: 0 2.5rem;
-
-        @include sm {
-          @include flex(column-reverse, center, center);
-        }
-
-        .slide-content {
-          width: 45%;
-          text-align: left;
-          color: var(--color-light);
-
-          .slide-header {
-            color: var(--color-main);
-            font-size: var(--font-d-subtitle);
-            font-family: var(--header-font);
-            font-weight: var(--medium-light);
-            margin: 1rem 0;
-          }
-
-          .slide-subtitle {
-            font-family: var(--header-font);
-            font-size: var(--font-d-header);
-            font-weight: var(--bold);
-            line-height: var(--font-d-header);
-          }
-
-          .slide-text {
-            font-size: var(--font-d-slide);
-            margin: 1rem 0;
-          }
-
-          .slide-list {
-            li {
-              @include flex(row, flex-start, flex-start);
-              margin-left: 0.5rem;
-
-              p {
-                width: 8px;
-                height: 8px;
-                background-color: var(--color-main);
-                margin-right: 0.5rem;
-              }
-            }
-          }
-        }
-      }
-      .slide-img {
-        width: 55%;
-        margin: 50px;
-
-        img {
-          object-fit: cover;
-          width: 100%;
-        }
-      }
-    }
   }
 
   &__dots {
-    @include flex(row, center, center);
-
-    height: 10%;
+    position: absolute;
+    display: flex;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
 
     .dot {
       width: 14px;
       height: 14px;
       background-color: var(--color-main);
-      margin: 10px;
+      margin: 0 10px;
       z-index: 777;
       cursor: pointer;
 
       &.active {
         background-color: var(--color-light);
       }
+    }
+  }
+}
+
+.slide {
+  @include flex(row, center, space-between);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+    padding: 0 1rem;
+    user-select: none;
+    transition: opacity 0.8s ease-in-out;
+  }
+
+  &__content {
+    width: 45%;
+    color: var(--color-light);
+    text-align: left;
+
+    .header {
+      color: var(--color-main);
+      font-size: var(--font-d-subtitle);
+      font-family: var(--header-font);
+      font-weight: var(--medium-light);
+      margin: 1rem 0;
+    }
+
+    .subtitle {
+      font-family: var(--header-font);
+      font-size: var(--font-d-header);
+      font-weight: var(--bold);
+      line-height: var(--font-d-header);
+    }
+
+    .text {
+      font-size: var(--font-d-slide);
+      margin: 1rem 0;
+    }
+
+    .list {
+      li {
+        @include flex(row, flex-start, flex-start);
+        margin-left: 0.5rem;
+
+        p {
+          width: 8px;
+          height: 8px;
+          background-color: var(--color-main);
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 55%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      padding: 0 50px;
     }
   }
 }
