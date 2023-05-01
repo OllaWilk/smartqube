@@ -9,6 +9,7 @@
 
   a {
     width: 160px;
+    width: auto;
 
     @include sm {
       width: auto;

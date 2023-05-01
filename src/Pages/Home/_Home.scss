@@ -3,9 +3,9 @@
 .home-page {
   &__splash,
   &__products-and-services,
-  &__solutions,
-  &__contact {
-    position: relative;
+  &__our-work,
+  &__contact,
+  &__newsletter {
     background-position: center center;
     background-size: cover;
   }
@@ -13,23 +13,98 @@
   &__splash {
     background-image: url('../../images/banner-bg.png');
     background-attachment: fixed;
-    // height: 65vh;
   }
 
-  &__solutions {
+  &__contact {
+    height: 35vh;
+  }
+
+  &__about {
+    background-image: url('../../images/bg-layer-qube-min.png');
+    padding: 2rem 0;
+
+    @include lg {
+      height: auto;
+    }
+
+    .about-wrapper {
+      @include flex(row, center, space-around);
+      height: 100%;
+      flex-wrap: wrap;
+
+      @include sm {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__our-work {
     background-color: var(--color-light);
     padding: 0rem 0;
+    height: 65vh;
+    @include flex(column, center, center);
+
+    @include md {
+      height: auto;
+    }
+
+    .our-work-wrap {
+      @include flex(row, center, space-between);
+
+      @include md {
+        flex-direction: column;
+      }
+
+      .img-wrap {
+        width: 50%;
+        padding: 0 1rem 0 0;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .text-wrap {
+        width: 50%;
+        height: 100%;
+        @include flex(column, flex-start, center);
+        text-align: left;
+        padding: 0 0 0 1rem;
+
+        h3 {
+          font-family: var(--header-font);
+          font-size: var(--font-d-header);
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+      }
+
+      .btn-green {
+        background-color: var(--color-green-dark);
+        padding: 12px 24px;
+        border: 2px solid var(--color-green-dark);
+        width: 100%;
+        color: var(--color-light);
+        font-family: var(--header-font);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: var(--transition);
+        cursor: pointer;
+        margin: 2rem 0;
+
+        &:hover {
+          background-color: transparent;
+          color: var(--color-green-dark);
+        }
+      }
+    }
   }
 
-  &__products-and-services {
-    background-image: url('../../images/bg-layer-qube-min.png');
-    margin: 2rem 0;
-    height: 65vh;
-  }
-  &__contact {
+  &__newsletter {
     background-color: var(--color-green-dark);
 
-    .contact-section {
+    .newsletter-section {
       @include flex(row, center, space-between);
       padding: 50px;
 

@@ -32,9 +32,9 @@ body {
   width: 90vw;
   max-width: 1200px;
   margin: 0 auto;
-  // background-color: pink;
+  // background-color: turquoise;
 
-  @include sm {
+  @include lg {
     width: 95vw;
   }
 }
