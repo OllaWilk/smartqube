@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/smartqube/static/css/main.1ac02667.css",
-    "main.js": "/smartqube/static/js/main.cd1ecc6d.js",
+    "main.css": "/smartqube/static/css/main.fa132bad.css",
+    "main.js": "/smartqube/static/js/main.cf386e20.js",
+    "static/media/contener.jpg": "/smartqube/static/media/contener.042d06dbfd57195d12bd.jpg",
+    "static/media/splash.jpg": "/smartqube/static/media/splash.19d0b08842184b0933d8.jpg",
     "static/media/EV_Series.png": "/smartqube/static/media/EV_Series.71445b5a2197c9d11cc1.png",
+    "static/media/engeneer.png": "/smartqube/static/media/engeneer.27ca9ea18d7365ae560a.png",
+    "static/media/Enclosure-Modularity-Website.png": "/smartqube/static/media/Enclosure-Modularity-Website.66686af3dae989f6a58e.png",
     "static/media/air-con-head-reduced.jpg": "/smartqube/static/media/air-con-head-reduced.fc0a441fcf47c544ecfd.jpg",
-    "static/media/banner-bg.png": "/smartqube/static/media/banner-bg.3147c2ed6b1853e67b28.png",
     "static/media/bg-layer-qube-min.png": "/smartqube/static/media/bg-layer-qube-min.1ed89b34251c6e1ee2ed.png",
     "static/media/logo.png": "/smartqube/static/media/logo.7d0b669fda9ce1fc2868.png",
-    "static/media/solutions.png": "/smartqube/static/media/solutions.4043b558305c97ab4114.png",
     "index.html": "/smartqube/index.html",
-    "main.1ac02667.css.map": "/smartqube/static/css/main.1ac02667.css.map",
-    "main.cd1ecc6d.js.map": "/smartqube/static/js/main.cd1ecc6d.js.map"
+    "main.fa132bad.css.map": "/smartqube/static/css/main.fa132bad.css.map",
+    "main.cf386e20.js.map": "/smartqube/static/js/main.cf386e20.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ac02667.css",
-    "static/js/main.cd1ecc6d.js"
+    "static/css/main.fa132bad.css",
+    "static/js/main.cf386e20.js"
   ]
 }
