@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/smartqube/static/css/main.f4c76c61.css",
-    "main.js": "/smartqube/static/js/main.dbd05c03.js",
+    "main.css": "/smartqube/static/css/main.8487fbf0.css",
+    "main.js": "/smartqube/static/js/main.c7291193.js",
     "static/media/splash.jpg": "/smartqube/static/media/splash.19d0b08842184b0933d8.jpg",
     "static/media/EV_Series.png": "/smartqube/static/media/EV_Series.71445b5a2197c9d11cc1.png",
     "static/media/engeneer.png": "/smartqube/static/media/engeneer.27ca9ea18d7365ae560a.png",
@@ -11,11 +11,11 @@
     "static/media/cart-1.jpg": "/smartqube/static/media/cart-1.a6c565d2f29b55a8164d.jpg",
     "static/media/logo.png": "/smartqube/static/media/logo.7d0b669fda9ce1fc2868.png",
     "index.html": "/smartqube/index.html",
-    "main.f4c76c61.css.map": "/smartqube/static/css/main.f4c76c61.css.map",
-    "main.dbd05c03.js.map": "/smartqube/static/js/main.dbd05c03.js.map"
+    "main.8487fbf0.css.map": "/smartqube/static/css/main.8487fbf0.css.map",
+    "main.c7291193.js.map": "/smartqube/static/js/main.c7291193.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4c76c61.css",
-    "static/js/main.dbd05c03.js"
+    "static/css/main.8487fbf0.css",
+    "static/js/main.c7291193.js"
   ]
 }
