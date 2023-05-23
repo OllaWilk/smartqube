@@ -1,18 +1,19 @@
 @import '../../styles/mixins';
+@import '../../styles/typography';
 
 .carousel {
   position: relative;
   height: 600px;
 
-  @include lg {
+  @include lg-max {
     height: 550px;
   }
 
-  @include md {
+  @include md-max {
     height: 400px;
   }
 
-  @include sm {
+  @include sm-min {
     height: calc(100vh - 100px);
   }
 
@@ -25,15 +26,15 @@
     height: 460px;
     @include flex(row, center, center);
 
-    @include lg {
+    @include lg-max {
       width: 100%;
     }
 
-    @include md {
+    @include md-max {
       width: 100%;
     }
 
-    @include sm {
+    @include sm-min {
       width: 100%;
       height: calc(100% - 2rem);
     }
@@ -53,7 +54,7 @@
       z-index: 777;
       cursor: pointer;
 
-      @include lg {
+      @include lg-max {
         display: none;
       }
     }
@@ -74,7 +75,7 @@
       z-index: 777;
       cursor: pointer;
 
-      @include md {
+      @include md-max {
         width: 12px;
         height: 12px;
       }
@@ -93,18 +94,17 @@
   height: 100%;
   opacity: 0;
 
-  @include lg {
+  @include lg-max {
     height: 90%;
   }
 
-  @include md {
+  @include md-max {
     height: 80%;
   }
 
-  @include sm {
+  @include sm-min {
     height: 100%;
     margin-bottom: 4rem;
-
     flex-direction: column-reverse;
   }
 
@@ -120,35 +120,32 @@
     color: var(--color-light);
     text-align: left;
 
-    @include md {
+    @include md-max {
       width: 50%;
     }
 
-    @include sm {
+    @include sm-min {
       width: 100%;
       height: 60vh;
     }
 
     .header {
+      @extend .h1;
       color: var(--color-main);
-      font-size: var(--font-d-subtitle);
-      font-family: var(--header-font);
-      font-weight: var(--medium-light);
+
       margin: 1rem 0;
 
-      @include md {
+      @include md-max {
         font-size: var(--font-m-subtitle);
         margin: 0rem 0;
       }
     }
 
     .subtitle {
-      font-family: var(--header-font);
-      font-size: var(--font-d-header);
+      @extend .h2;
       font-weight: var(--bold);
-      line-height: var(--font-d-header);
 
-      @include md {
+      @include md-max {
         font-size: var(--font-m-header);
       }
     }
@@ -157,11 +154,11 @@
       font-size: var(--font-d-slide);
       margin: 1rem 0;
 
-      @include md {
+      @include md-max {
         font-size: var(--font-m-text);
       }
 
-      @include sm {
+      @include sm-min {
         margin: 0;
       }
     }
@@ -171,7 +168,7 @@
         @include flex(row, center, flex-start);
         margin-left: 0.5rem;
 
-        @include md {
+        @include md-max {
           font-size: var(--font-m-text);
         }
 
@@ -192,19 +189,17 @@
     height: 100%;
     @include flex(row, center, flex-end);
 
-    @include md {
+    @include md-max {
       width: 60%;
     }
 
-    @include sm {
+    @include sm-min {
       width: 100%;
       padding: 2.5rem 0 0 0;
     }
 
     img {
-      object-fit: cover;
-      width: 100%;
-      height: auto;
+      @include img;
       bottom: 0;
     }
   }

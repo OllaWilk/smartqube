@@ -1,14 +1,16 @@
 :root {
   /* Colors */
   --color-dark: #040404;
-  --color-light: #f5f5f5;
-  --color-main: #5dba4e;
+  --color-light: #ffffff;
+  --color-main: #5dbb4e;
   --color-green-dark: #0d5401;
+  --color-grey: #b3b3b3;
 
   /* Fonts */
   --header-font: 'Oswald', sans-serif;
   --text-font: 'Lato', sans-serif;
 
+  --superbold: 900;
   --bold: 700;
   --semi-bold: 600;
   --normal: 400;
@@ -18,16 +20,19 @@
   /* mobie */
   --font-m-text: 14px;
   --font-m-subtitle: 18px;
-  --font-m-header: 26px;
+  --font-m-header: 46px;
 
   /* desctop */
+  --font-d-btn: 14px;
   --font-d-text: 16px;
   --font-d-slide: 20px;
-  --font-d-subtitle: 28px;
-  --font-d-header: 48px;
+  --font-d-section-subtitle: 24px;
+  --font-d-subtitle: 26px;
+  --font-d-section-header: 36px;
+  --font-d-header: 56px;
 
   /* Transition */
-  --transition: 0.2s linear;
+  --transition: 0.3s linear;
 
   /* Response */
 

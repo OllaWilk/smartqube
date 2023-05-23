@@ -15,6 +15,7 @@ body {
   font-family: var(--text-font);
   font-size: var(--font-d-text);
   color: var(--color-dark);
+  letter-spacing: 1px;
   text-align: center;
   line-height: 1.7;
 }
@@ -22,19 +23,17 @@ body {
 .pages {
   padding: 120px 0 0 0;
 
-  @include sm {
+  @include sm-max {
     min-height: 94vh;
     padding: 100px 0 0 0;
   }
 }
 
 .container {
-  width: 90vw;
-  max-width: 1200px;
+  width: 70vw;
   margin: 0 auto;
-  // background-color: turquoise;
 
-  @include lg {
+  @include lg-max {
     width: 95vw;
   }
 }

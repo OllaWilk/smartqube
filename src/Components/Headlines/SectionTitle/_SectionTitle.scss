@@ -1,0 +1,32 @@
+@import './../../../styles/typography';
+
+.section-title {
+  font-family: var(--header-font);
+  text-transform: uppercase;
+
+  h3 {
+    font-size: var(--font-d-section-subtitle);
+    color: var(--color-main);
+    line-height: 29px;
+    font-weight: var(--bold);
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: var(--font-d-section-header);
+    line-height: 40px;
+    font-weight: var(--superbold);
+    color: var(--color-dark);
+    padding: 20px 0;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 3px;
+      width: 77px;
+      background-color: var(--color-main);
+      margin-top: 30px;
+    }
+  }
+}

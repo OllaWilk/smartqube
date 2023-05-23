@@ -11,7 +11,7 @@
   .footer-text {
     padding: 0 1rem;
 
-    @include sm {
+    @include sm-max {
       padding: 1rem;
     }
   }
@@ -20,7 +20,7 @@
     border-right: 1px solid var(--color-light);
     border-left: 1px solid var(--color-light);
 
-    @include sm {
+    @include sm-max {
       // border-top: 1px solid var(--color-light);
       // border-bottom: 1px solid var(--color-light);
       border-right: none;

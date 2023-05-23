@@ -1,0 +1,55 @@
+@import '../../styles/mixins';
+@import '../../styles/typography';
+
+.info-box {
+  @include flex(row, flex-start, space-between);
+  padding: 20px;
+  text-align: left;
+
+  .heading-block {
+    width: 47%;
+
+    @include md-max {
+      width: 100%;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    .abstract {
+      padding: 30px 0;
+      font-weight: var(--normal);
+      font-style: italic;
+      color: var(--color-grey);
+      line-height: 38px;
+      font-size: var(--font-d-section-subtitle);
+    }
+  }
+
+  .text-block {
+    width: 47%;
+    @include flex(column, space-between, center);
+
+    @include md-max {
+      width: 100%;
+    }
+
+    .text {
+      @extend .text;
+
+      &:nth-child(2) {
+        margin: 30px 0;
+      }
+    }
+
+    .btn-green {
+      font-size: var(--font-d-text);
+      width: fit-content;
+    }
+  }
+
+  @include md-max {
+    @include flex(column, center, space-between);
+  }
+}

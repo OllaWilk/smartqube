@@ -1,0 +1,58 @@
+@import '../../styles/mixins';
+
+.testimonial {
+  width: 30%;
+
+  @include lg-max {
+    width: 80%;
+    margin: auto;
+
+    &:nth-child(2) {
+      margin: 170px auto;
+    }
+  }
+
+  @include md-max {
+    width: 100%;
+  }
+
+  .description {
+    position: relative;
+    border: 2px solid #b3b3b3;
+    padding: 25px 20px 89px 20px;
+    color: var(--color-light);
+
+    .name-wrap {
+      position: absolute;
+      @include flex(column, center, center);
+      left: 0%;
+      width: 100%;
+      bottom: -130px;
+
+      .color {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        background-color: gray;
+      }
+
+      .name {
+        font-family: var(--header-font);
+        font-size: 30px;
+        line-height: 36px;
+
+        @include lg-min {
+          font-size: 26px;
+        }
+      }
+
+      .company {
+        font-family: var(--header-font);
+        font-size: 24px;
+        line-height: 29px;
+        color: var(--color-main);
+      }
+    }
+  }
+}

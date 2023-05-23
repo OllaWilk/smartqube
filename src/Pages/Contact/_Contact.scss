@@ -1,13 +1,13 @@
+@import '../../styles/mixins';
+
 .contact-page {
   .img-wrap {
     width: 100%;
     height: 30vh;
 
     img {
-      object-fit: cover;
+      @include img;
       object-position: bottom;
-      width: 100%;
-      height: 100%;
     }
   }
 }

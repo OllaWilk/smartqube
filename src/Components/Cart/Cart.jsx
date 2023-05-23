@@ -1,22 +1,19 @@
 import React from 'react';
-import './_Cart.scss';
-import solutions from '../../images/solutions.png';
+import {
+  GreenBtnWithoutBackground,
+  ImageBox,
+  DescriptionSubtitle,
+} from '../index.js';
 
-export const Cart = (props) => {
-  const { title } = props;
+import './_Cart.scss';
+
+export const Cart = ({ title, abstract, url }) => {
   return (
     <div className='cart'>
-      <div className='img-cart'>
-        <img src={solutions} alt={title} />
-      </div>
-
-      <h3 className='title-cart'>{title}</h3>
-      <p className='text-cart'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maiores
-        dignissimos nobis natus labore sequi dolore explicabo est atque ea
-        reiciendis, soluta quis! In perferendis aperiam a assumenda voluptatum.
-        Deserunt.
-      </p>
+      <ImageBox url={url} alt={title} />
+      <DescriptionSubtitle text={title} />
+      <p className='abstract'>{abstract}</p>
+      <GreenBtnWithoutBackground text='read more' />
     </div>
   );
 };

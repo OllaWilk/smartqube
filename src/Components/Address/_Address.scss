@@ -2,24 +2,25 @@
 
 .address {
   @include flex(column, center, center);
+  height: auto;
 
-  @include sm {
-    min-height: 70vh;
+  .logo {
+    width: 300px;
   }
 
   a {
     width: 160px;
     width: auto;
 
-    @include sm {
+    @include sm-min {
       width: auto;
       padding: 10%;
     }
   }
 
   &__text {
-    color: var(--color-light);
     font-family: var(--header-font);
+    color: var(--color-light);
     letter-spacing: 1px;
     font-weight: var(--semi-bold);
   }

@@ -10,7 +10,7 @@ import close from '../../images/close.png';
 import './_Navigation.scss';
 
 export const Navigation = () => {
-  const navLinks = ['home', 'about', 'contact', 'mission'];
+  const navLinks = ['home', 'about', 'products', 'portfolio', 'contact'];
 
   const [value, toggle] = useToggle(false);
 

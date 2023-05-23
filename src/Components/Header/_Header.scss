@@ -1,0 +1,56 @@
+@import '../../styles/mixins';
+@import '../../styles/typography';
+
+.header {
+  @include flex(row, center, space-between);
+  height: 639px;
+
+  @include sm-max {
+    height: 100vh;
+  }
+
+  &__content-wrapper {
+    @include flex(column, flex-start, flex-start);
+    height: auto;
+    text-align: left;
+    width: 100%;
+
+    @include xl-min {
+      width: 55%;
+    }
+
+    .text {
+      @extend .text;
+      color: var(--color-light);
+      padding-bottom: 27px;
+
+      @include sm-min {
+        width: 484px;
+      }
+
+      @include md-min {
+        width: 500px;
+      }
+    }
+
+    .header__btns-wrap {
+      @include flex(row, center, space-beween);
+
+      @include sm-max {
+        @include flex(column, flex-start, space-beween);
+      }
+      button {
+        margin: 30px 30px 0 0;
+      }
+    }
+  }
+
+  .img-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 15vw;
+    @include xl-max {
+      display: none;
+    }
+  }
+}

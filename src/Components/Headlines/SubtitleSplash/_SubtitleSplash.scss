@@ -1,0 +1,8 @@
+@import '../../../styles/mixins';
+@import '../../../styles/typography';
+
+.subtitle {
+  @extend .h2;
+  color: var(--color-main);
+  text-transform: uppercase;
+}

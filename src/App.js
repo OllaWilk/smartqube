@@ -13,7 +13,7 @@ export const App = () => {
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/mission' element={<Main />} />
+          <Route path='/smartqube' element={<Main />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>

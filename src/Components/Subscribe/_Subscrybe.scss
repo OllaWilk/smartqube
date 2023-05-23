@@ -1,7 +1,7 @@
 @import '../../styles/mixins';
 
 .subscrybe {
-  @include sm {
+  @include sm-max {
     width: auto;
     padding: 2rem 10%;
     min-height: 25vh;
